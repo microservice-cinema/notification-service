@@ -1,3 +1,4 @@
+import type { OtpRequestedEvent } from '@microservice-cinema/contracts'
 import { Controller } from '@nestjs/common'
 import { Ctx, EventPattern, Payload, RmqContext } from '@nestjs/microservices'
 
@@ -13,7 +14,10 @@ export class NotificationsController {
 	) {}
 
 	@EventPattern('auth.otp.requested')
-	public async otpRequested(@Payload() data: any, @Ctx() ctx: RmqContext) {
+	public async otpRequested(
+		@Payload() data: OtpRequestedEvent,
+		@Ctx() ctx: RmqContext
+	) {
 		try {
 			console.log(`OTP event received: `, data)
 
