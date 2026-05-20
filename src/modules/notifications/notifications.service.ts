@@ -1,4 +1,8 @@
-import { OtpRequestedEvent } from '@microservice-cinema/contracts'
+import {
+	EmailChangedEvent,
+	OtpRequestedEvent,
+	PhoneChangedEvent
+} from '@microservice-cinema/contracts'
 import { Injectable } from '@nestjs/common'
 
 import { MailService } from '../../infrastructure/mail/mail.service'
@@ -16,5 +20,17 @@ export class NotificationsService {
 
 		if (type === 'email') await this.mailService.sendOtp(identifier, code)
 		else await this.smsService.sendOtp(identifier, code)
+	}
+
+	public async sendPhoneChanged(data: PhoneChangedEvent) {
+		const { phone, code } = data
+
+		return await this.smsService.phoneChanged(phone, code)
+	}
+
+	public async sendEmailChanged(data: EmailChangedEvent) {
+		const { email, code } = data
+
+		return await this.mailService.sendEmailChanged(email, code)
 	}
 }
