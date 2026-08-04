@@ -1,5 +1,7 @@
 version: '3.9'
 
+name: microservice-cinema
+
 services:
   notification-service:
     container_name: notification-service
