@@ -1027,22 +1027,22 @@
   resolved "https://registry.yarnpkg.com/@lukeed/csprng/-/csprng-1.1.0.tgz#1e3e4bd05c1cc7a0b2ddbd8a03f39f6e4b5e6cfe"
   integrity sha512-Z7C/xXCiGWsg0KuKsHTKJxbWhpI3Vs5GwLfOean7MGyVFGqdRgBbAjOCh6u4bbjPc/8MJ2pZmK/0DLdCbivLDA==
 
-"@microservice-cinema/common@^1.1.5":
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/@microservice-cinema/common/-/common-1.1.5.tgz#8bb988787b96fae36309f0cca4dc2a2c3b4ab1b3"
-  integrity sha512-hRBwU5BB6xGC9TrxsN05b7no4mddtME+wipp23MHIVNHoiuToaMSZS29LTVkR1KB5J8i+0kHfSDf6UR/d1NPoA==
+"@microservice-cinema/common@^1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@microservice-cinema/common/-/common-1.1.9.tgz#3bab6a273db62557b34da54415ae536c1fb74a57"
+  integrity sha512-SyBIzH8CMXvW037s9nRBcvVu1t8aN4R1yL2uQnROVJ4GA2/kHXI0OM6xp3R1HdKNhpn9ejke4KRN2qUuanNYUw==
   dependencies:
-    "@microservice-cinema/contracts" "^1.2.2"
+    "@microservice-cinema/contracts" "^1.2.4"
     "@nestjs/common" "^11.1.23"
     "@nestjs/config" "^4.0.4"
     "@nestjs/microservices" "^11.1.23"
 
-"@microservice-cinema/contracts@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@microservice-cinema/contracts/-/contracts-1.2.2.tgz#129ae0a0fac442dae0f5fa46611aa489ea0f60e1"
-  integrity sha512-ZhpsE8a/X8S/V+hq7OU0CY4w9Hhh8tacBxU05HfiZbSiESu7gG99h0nIQAES3f+KOh1vUL64n+vEECShO2xXAQ==
+"@microservice-cinema/contracts@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@microservice-cinema/contracts/-/contracts-1.2.4.tgz#3bdc8f734e77b1d05bb3eccd68cbda989b6aadd8"
+  integrity sha512-o0zR5qJSGAof3G7zz6N4BBFfas0OqsGs29LXstdH690u0+eoITpnKDvw+rrPpSR3/0GCQjXbJgCaJBUEcSTJgw==
   dependencies:
-    "@nestjs/microservices" "^11.1.13"
+    "@nestjs/microservices" "12.0.3"
     rxjs "^7.8.2"
     ts-proto "^2.11.2"
 
@@ -1159,7 +1159,15 @@
   resolved "https://registry.yarnpkg.com/@nestjs/mapped-types/-/mapped-types-2.1.1.tgz#9530ac3250ab433ba6ef831e9dd5d483f5fc8144"
   integrity sha512-SCCoMEJ6jdeI5h/N+KCVF1+pmg/hmEkNA5nHTS8Gvww7T/LCl4o1gFLinw2iQ60w7slFkszHcGLKGdazVI4F8A==
 
-"@nestjs/microservices@^11.1.13", "@nestjs/microservices@^11.1.19":
+"@nestjs/microservices@12.0.3":
+  version "12.0.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-12.0.3.tgz#6a351a3b6562520f2febd5e073159a57180f57f5"
+  integrity sha512-Qpie7VcC0TrQeHeiyGMB2t9IBSx9obq/+VbQqzq3XM5PZRr1Tx/Vhag2TOaxM77hBJmS1ku1c3CICT9+zsP+yg==
+  dependencies:
+    iterare "1.2.1"
+    tslib "2.8.1"
+
+"@nestjs/microservices@^11.1.19":
   version "11.1.19"
   resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-11.1.19.tgz#0222ca2331a2a702df3b4dd6b7fd2fe7487fb39a"
   integrity sha512-3Oja56ydTlSaui19/i7gYM0MMqz/w4UR2aqZeL4K8B+Fq0Ztg3zHb8et76atToJGpSCevJLEsoEMOMaGgzRwfg==
@@ -1168,9 +1176,9 @@
     tslib "2.8.1"
 
 "@nestjs/microservices@^11.1.23":
-  version "11.1.23"
-  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-11.1.23.tgz#d34c54e895525c259491c4e5612958a815dec9d2"
-  integrity sha512-iVPp3u274Xx6XAEbKPWDCzUHP6wlt7L7RXUIyIpf3caJ3ldFh/dG3uyHva1lgjHG+ukz+XCXafl1cx352TPW0w==
+  version "11.2.11"
+  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-11.2.11.tgz#cea6233bbaf578be85f5a4184124056ebfcf5e5c"
+  integrity sha512-OjGnoeN6eFb2TaqxQZ2XnR6oVIIjp0RZJRSXx6MRddVxrVtmKqLRgML0v9yJo7mb5FrjnCK5NpTKXfxrj6MRrQ==
   dependencies:
     iterare "1.2.1"
     tslib "2.8.1"

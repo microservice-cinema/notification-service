@@ -59,7 +59,10 @@ export class NotificationsController {
 				status: 'error'
 			})
 
-			this.logger.error('OTP processing error: ', error.message ?? error)
+			this.logger.error(
+				'OTP processing error: ',
+				error instanceof Error ? error.message : String(error)
+			)
 
 			this.rmqService.nack(ctx, event)
 
@@ -98,7 +101,10 @@ export class NotificationsController {
 				status: 'error'
 			})
 
-			this.logger.error('Phone change error: ', error.message ?? error)
+			this.logger.error(
+				'Phone change error: ',
+				error instanceof Error ? error.message : String(error)
+			)
 
 			this.rmqService.nack(ctx, event)
 		} finally {
@@ -135,7 +141,10 @@ export class NotificationsController {
 				status: 'error'
 			})
 
-			this.logger.error('Email change error: ', error.message ?? error)
+			this.logger.error(
+				'Email change error: ',
+				error instanceof Error ? error.message : String(error)
+			)
 
 			this.rmqService.nack(ctx, event)
 		} finally {
