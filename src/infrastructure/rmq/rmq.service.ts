@@ -1,11 +1,7 @@
-import { Injectable, Logger } from '@nestjs/common';
-import { RmqContext } from '@nestjs/microservices';
-import { InjectMetric } from '@willsoto/nestjs-prometheus';
-import { Counter } from 'prom-client';
-
-
-
-
+import { Injectable, Logger } from '@nestjs/common'
+import { RmqContext } from '@nestjs/microservices'
+import { InjectMetric } from '@willsoto/nestjs-prometheus'
+import { Counter } from 'prom-client'
 
 @Injectable()
 export class RmqService {
